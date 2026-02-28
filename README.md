@@ -24,13 +24,13 @@ Copy the skill directory into your project or personal skills folder:
 
 ```bash
 # Project-level (this project only)
-cp -r arcadedb-skill .claude/skills/arcadedb-skill
+cp -r arcadedb .claude/skills/arcadedb
 
 # Personal (all your projects)
-cp -r arcadedb-skill ~/.claude/skills/arcadedb-skill
+cp -r arcadedb ~/.claude/skills/arcadedb
 ```
 
-Claude discovers skills automatically. Once installed, the skill activates when ArcadeDB-related questions are detected, or you can invoke it directly with `/arcadedb-skill`.
+Claude discovers skills automatically. Once installed, the skill activates when ArcadeDB-related questions are detected, or you can invoke it directly with `/arcadedb`.
 
 ### Claude.ai
 
@@ -48,7 +48,7 @@ For more details, see the [Agent Skills documentation](https://platform.claude.c
 ## Packaging
 
 ```bash
-cd arcadedb-skill && zip -r ../arcadedb.skill . && cd ..
+cd arcadedb && zip -r ../arcadedb.skill . && cd ..
 ```
 
 ## Author

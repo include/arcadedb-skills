@@ -11,7 +11,7 @@ There is no build system, no dependencies, and no executable code. The deliverab
 ## Repository Structure
 
 ```
-arcadedb-skill/                  # Skill source
+arcadedb/                        # Skill source
   SKILL.md                       # Master skill definition (YAML frontmatter + methodology)
   evals/evals.json               # 3 evaluation scenarios (social network, Neo4j migration, production setup)
   references/                    # Knowledge base extracted from ArcadeDB Manual v26.2.1
@@ -46,12 +46,12 @@ ArcadeDB-Manual.pdf              # Official ArcadeDB v26.2.1 manual (https://doc
 
 The `.skill` file is a ZIP archive. To repackage after changes:
 ```bash
-cd arcadedb-skill && zip -r ../arcadedb.skill . && cd ..
+cd arcadedb && zip -r ../arcadedb.skill . && cd ..
 ```
 
 ### Evaluations
 
-Eval scenarios are in `arcadedb-skill/evals/evals.json`. Each has an `id`, `prompt`, and `expected_output`. Results are reviewed via the HTML report.
+Eval scenarios are in `arcadedb/evals/evals.json`. Each has an `id`, `prompt`, and `expected_output`. Results are reviewed via the HTML report.
 
 ## ArcadeDB Domain Knowledge
 

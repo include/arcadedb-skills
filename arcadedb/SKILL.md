@@ -1,5 +1,5 @@
 ---
-name: arcadedb-skill
+name: arcadedb
 description: "Expert guidance for building applications with ArcadeDB, a multi-model database engine supporting Graph, Document, Key/Value, Search, Time Series, and Vector models. Use this skill whenever the user mentions ArcadeDB, or is working with ArcadeDB SQL, Cypher queries against ArcadeDB, ArcadeDB graph schemas, ArcadeDB HTTP API, or building any application that uses ArcadeDB as its database. Also trigger when the user needs help with graph database design patterns in ArcadeDB, migrating from Neo4j or OrientDB to ArcadeDB, writing ArcadeDB traversal queries, setting up ArcadeDB in Docker/Kubernetes, or working with ArcadeDB's vector search, time series, or full-text search features. Even if the user just says 'graph database' and context suggests ArcadeDB, use this skill."
 ---
 
