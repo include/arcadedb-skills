@@ -1,0 +1,23 @@
+{
+  "skill_name": "arcadedb-skill",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm building a social network app and want to use ArcadeDB as my graph database. I need to model users, friendships, and posts. Can you help me design the schema and write the SQL to create it? I also need a query that finds friends-of-friends who have posted about 'AI' in the last week. I'll be connecting via the HTTP API from my Node.js backend.",
+      "expected_output": "Complete schema DDL (vertex types for User and Post, edge types for FriendsWith and Published), index creation, a MATCH or traversal query for friends-of-friends filtered by post content and date, and an example HTTP API call from Node.js.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We're migrating from Neo4j to ArcadeDB. Our existing Cypher queries use MATCH patterns with variable-length paths, MERGE with ON CREATE/ON MATCH, and UNWIND. Can you show me how these translate to ArcadeDB's OpenCypher? Also, what are the gotchas we should watch out for during migration? Our biggest query finds shortest paths between two nodes with weighted edges.",
+      "expected_output": "Side-by-side examples showing Neo4j Cypher vs ArcadeDB OpenCypher for each pattern (VLP, MERGE, UNWIND), clear explanation of compatibility differences (case-insensitive identifiers, temporal range limits, USING clause), migration checklist, and a shortest-path query using ArcadeDB's graph algorithms or Cypher.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I need to set up ArcadeDB in production with Docker and Kubernetes. Requirements: 3-node HA cluster, automatic backups every 6 hours, vector search for our ML embeddings (768-dim from a sentence transformer), and the PostgreSQL wire protocol so our analytics team can use their existing BI tools. How do I configure all this?",
+      "expected_output": "Docker Compose or K8s manifests for 3-node HA cluster, backup scheduler configuration with CRON expression, vector index creation SQL with 768 dimensions, PostgreSQL protocol plugin setup, and relevant arcadedb-server.cfg settings for HA and plugins.",
+      "files": []
+    }
+  ]
+}
